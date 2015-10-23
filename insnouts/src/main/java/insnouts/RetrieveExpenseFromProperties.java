@@ -14,8 +14,10 @@ import java.util.Properties;
 	public class RetrieveExpenseFromProperties {
 		
 		InputStream inputStream;
+		
+		String xxx = "";
 	 
-		public void getPropValues() throws IOException {
+		public String getPropValues() throws IOException {
 	 
 			try {
 				Properties prop = new Properties();
@@ -28,12 +30,12 @@ import java.util.Properties;
 				} else {
 					throw new FileNotFoundException("property file '" + propertiesFileName + "' not found in the classpath");
 				}
-				
-				System.out.println(prop.getProperty("gas"));
+				xxx = prop.getProperty("expense.home.rent");
 			} catch (Exception e) {
 				System.out.println("Exception: " + e);
 			} finally {
 				inputStream.close();
 			}
+			return xxx;
 		}
 	}

@@ -14,7 +14,6 @@ import java.util.Properties;
 	public class RetrieveExpenseFromProperties {
 		
 		InputStream inputStream;
-		
 		String xxx = "";
 	 
 		public String getPropValues() throws IOException {

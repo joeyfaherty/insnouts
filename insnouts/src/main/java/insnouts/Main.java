@@ -8,6 +8,5 @@ public class Main {
 		System.out.println("Starting expense calculator...");
 		RetrieveExpenseFromProperties properties = new RetrieveExpenseFromProperties();
 		System.out.println(properties.getPropValues());
-		
 	}
 }

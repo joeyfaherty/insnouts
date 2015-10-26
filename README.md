@@ -1,8 +1,9 @@
 # insnouts
 Java Expense Manager
 
-// jar file that calculates all expense from a gross pay. Taxed also
-// all expenses, tax variables are in a config external to jar
-// run.sh to execute the jar file
+// java app (jar) calculates all expenses from an external properties file.
+// User edits the config file with his/her expense details
+// run shell script that executes the jat file (./run.sh)
+// maven plugins used to create a tar.gz distributiuon containing, config file, jar and shell script.
 
 tools: Java, maven, bash

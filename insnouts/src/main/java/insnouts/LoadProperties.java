@@ -47,4 +47,5 @@ import java.util.Properties;
 			// get the property value and return it
 			return prop.getProperty("expense.home.rent");
 		}
+		
 	}
